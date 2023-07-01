@@ -1,3 +1,4 @@
+
 function getResponseFromAPI() {
   return new Promise((resolve, reject) => {
     setTimeout (() => {
@@ -7,5 +8,5 @@ function getResponseFromAPI() {
   });
 }
 
-const response = getResponseFromAPI();
-console.log(response instanceof Promise);
+module.exports = getResponseFromAPI();
+
