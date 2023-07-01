@@ -1,12 +1,3 @@
-
-function getResponseFromAPI() {
-  return new Promise((resolve, reject) => {
-    setTimeout (() => {
-	const responseData = { message: "Response from API" };
-	resolve(responseData);
-    }, 2000);
-  });
+export default function getResponseFromAPI() {
+  return new Promise(() => {});
 }
-
-module.exports = getResponseFromAPI();
-
